@@ -47,4 +47,15 @@ public class FizzBuzzTest {
 	public void generarFizzBuzzSiElNumeroEsMultiploDeTresYCinco(){
 		assertEquals("FizzBuzz", fb.genera(30));
 	}
+	
+	@Test
+	public void imprimirEnPantallaSecuenciaFizzBuzz(){
+		String esperado = "1\n"+
+						  "2\n"+
+						  "Fizz\n"+
+						  "4\n"+
+						  "Buzz\n"+
+						  "Fizz\n";
+		assertEquals(esperado, fb.imprimir(6));
+	}
 }

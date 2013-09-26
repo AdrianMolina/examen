@@ -21,4 +21,11 @@ public class FizzBuzz {
 	private boolean esMultiploDe(int numero, int multiplo) {
 		return numero % multiplo == 0;
 	}
+
+	public String imprimir(int maximo) {
+		String secuencia = "";
+		for(int i = 1; i <= maximo; i++)
+			secuencia = secuencia + genera(i) + "\n";
+		return secuencia;
+	}
 }
